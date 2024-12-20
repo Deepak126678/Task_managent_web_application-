@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Web Application</title>
+</head>
+<body>
+    <header>
+        <h1 id="Title">Task Management Web Application</h1>
+    </header>
+        <nav>
+            <button id="add_task"> Add Task</button>
+            <button id="Edit_Task">Edit Task</button>
+            <button id="Delete_task">Delete Task</button>
+            <label for="priority">Choose Task Priority:</label>
+            <select name="cars" id="priority">
+              <option value="volvo">High</option>
+              <option value="saab">Medium</option>
+              <option value="opel">low</option>
+            </select>
+        </nav>
+        <div id="task-body">
+            <div id="task-contain">
+        <form action="/action_page.php">
+            <label for="task-title">Enter Task Title:</label><br>
+            <input type="text" id="task-title" ><br>
+            <label for="task-desc">Task Description</label><br>
+
+          <textarea id="task-desc" name="task-desc" rows="8" cols="40" >
+
+          </textarea><br>
+          <select name="task-priority" id="priority">
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">low</option>
+          </select>
+          </form>
+          </div>
+          </div> 
+          <button id="display-task" >Display Task</button>
+    
+  <script src="index.js"></script>  
+</body>
+</html>
